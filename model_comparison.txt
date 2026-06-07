@@ -1,0 +1,9 @@
+Model Comparison Table
+======================
+
+Model Name                | Accuracy   | F1 Macro   | Trainable Params   | Total Params    | Train Time (s) 
+---------------------------------------------------------------------------------------------------------
+Custom CNN                | 0.3000     | 0.1538     | 110595             | 111051          | 41.62          
+MobileNetV2 Phase 1       | 1.0000     | 1.0000     | 164355             | 2422347         | 40.62          
+MobileNetV2 Phase 2       | 1.0000     | 1.0000     | 1690755            | 2422347         | 88.91          
+Improved CNN              | 0.3000     | 0.1538     | 305059             | 306225          | 91.71          
