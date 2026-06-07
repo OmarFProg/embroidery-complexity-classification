@@ -1,0 +1,68 @@
+# ==============================================================================
+# GITIGNORE OFICIAL - TAREA 4: APRENDIZAJE PROFUNDO
+# Clasificación de Complejidad de Bordados mediante CNN (PyTorch)
+# ==============================================================================
+
+# --- Entornos Virtuales Locales ---
+venv/
+.venv/
+env/
+lib/
+lib64/
+bin/
+include/
+share/
+
+# --- Cachés y Temporales de Python / Editores ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+.pytest_cache/
+.vscode/
+.idea/
+.history/
+
+# --- Archivos Pesados de Modelos y Pesos ---
+# Forzamos que Colab entrene el modelo en vivo y no use archivos locales
+modelos/
+*.pth
+*.pt
+*.onnx
+*.h5
+
+# --- Gráficos e Imágenes Locales (Se autogenerarán en Colab) ---
+recursos/*.png
+recursos/*.jpg
+recursos/*.jpeg
+recursos/*.pdf
+
+# --- Archivos Temporales de Reportes y Compilación ---
+*.log
+*.aux
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.out
+
+# --- Archivos Comprimidos Residuales y Copias de Respaldo ---
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.tgz
+
+# --- Directorio Legado y Scripts Locales Obsoletos ---
+# Bloquea scripts de soporte locales previos que ya están integrados en el .ipynb
+tarea4_entrenamiento_local.py
+*_local.py
+respaldos/
+metricas_intermedias.csv
+
+# --- Datasets Locales Omitibles ---
+# Descomenta la línea de abajo si el notebook descarga el dataset en vivo desde un link público
+# datos/dataset_bordados/
